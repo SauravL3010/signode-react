@@ -1,6 +1,6 @@
-import useFetch from "./useFetch";
+import useFetch from "../Hooks/useFetch";
 import SiteButton from "./SiteButton";
-import SigLogo from "./SigLogo";
+import SigLogo from "../Logo/SigLogo";
 
 
 const SiteList  = () => {

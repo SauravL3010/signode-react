@@ -1,4 +1,4 @@
-import imgSrc from '../images/SignodeLogo_RGB_FOR PPT AND SCREEN USE.png'
+import imgSrc from '../Logo/SignodeLogo_RGB_FOR PPT AND SCREEN USE.png'
 
 console.log(imgSrc)
 

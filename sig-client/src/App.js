@@ -1,9 +1,9 @@
 import './style/App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
-import Navbar from './components/Navbar'
-import SiteList from './components/SiteList';
-import TableData from './components/TableData'
+import Navbar from './components/Navbar/Navbar'
+import SiteList from './components/SiteList/SiteList';
+import TableData from './components/Table/TableData'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 

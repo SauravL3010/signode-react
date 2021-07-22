@@ -1,4 +1,4 @@
-import useFetch from "./useFetch"
+import useFetch from "../Hooks/useFetch"
 import { useParams } from "react-router-dom";
 import TableBody from "./TableBody";
 
