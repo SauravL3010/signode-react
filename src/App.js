@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import NavBar from './components/NavBar'
+import SiteList from './components/SiteList'
+
+import { createTheme, ThemeProvider } from '@material-ui/core'
+import OrderDetails from './components/OrderDetails';
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#424242',
+    },
+    secondary: {
+      main: 'rgb(255, 232, 232)',
+    },
+  }
+})
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+    <Router>
+      <NavBar />
+      <Switch>
+        <Route exact path='/'>
+          <SiteList />
+        </Route>
+        <Route exact path='/order'>
+          <OrderDetails />
+        </Route>
+      </Switch>
+    </Router>
+    </ThemeProvider>
   );
 }
 
